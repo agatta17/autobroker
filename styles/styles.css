@@ -8,7 +8,6 @@ body {
   margin: 36px auto 45px;
   display: flex;
   justify-content: space-between;
-  padding-left: 25px;
 }
 
 .burger {
@@ -73,7 +72,6 @@ body {
 .our-advantages-item__number {
   font-weight: bold;
   font-size: 158px;
-  line-height: 110%;
   letter-spacing: 0.015em;
   text-transform: uppercase;
   color: #EDEDED;
@@ -93,6 +91,7 @@ body {
   height: 730px;
   background: #FFDD2E;
   padding-top: 70px;
+  box-sizing: border-box;
 }
 
 .carousel__title {
@@ -102,4 +101,49 @@ body {
   text-align: center;
   letter-spacing: 0.015em;
   text-transform: uppercase;
+}
+
+.carousel__card {
+  width: 800px;
+  height: 395px;
+  background: #FFF;
+  border-radius: 20px;
+  margin: 23px auto;
+}
+
+.carousel__slider {
+  margin: 20px auto;
+}
+
+.slider {
+  display: flex;
+  width: 232px;
+  justify-content: space-between;
+}
+
+.slider__circle {
+  width: 21px;
+  height: 21px;
+  background: #FFF;
+  border-radius: 50%;
+}
+
+.slider__circle_active {
+   background: #252423;
+   border: solid #FFF 5px;
+   box-sizing: border-box;
+}
+
+.carousel__btn {
+  width: 370px;
+  height: 63px;
+  background: #E93136;
+  border-radius: 46px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 63px;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 40px auto;
+  box-shadow: 1px 6px #FF6468, 1px 1px 20px rgba(0, 0, 0, 0.15);
 }
