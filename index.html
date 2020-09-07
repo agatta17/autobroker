@@ -56,9 +56,31 @@
       Продажа авто с пробегом в Самаре
     </div>
     <div class="carousel">
-      <div class="carousel__title">298 автомобилей в нашей базе</div>
-      <div class="carousel__card">
-        
+      <div class="carousel__title">
+        298 автомобилей в нашей базе
+      </div>
+      <div class="carousel__card card">
+        <div class="card__photo"></div>
+        <div class="card__text">
+          <div class="card__title">
+            Lifan Solano
+          </div>
+          <div class="card__price">
+            1 499 000 ₽
+          </div>
+          <div class="card__credit-price">
+            в кредит от 12 000 ₽
+          </div>
+          <ul class="card__specifications">
+            <li>Год выпуска: 2010</li>
+            <li>Пробег: 110 000 км</li>
+            <li>Двигатель: бензиновый, 200 л/с</li>
+            <li>КПП: автомат</li>
+            <li>Кузов: седан</li>
+            <li>Привод: передний</li>
+          </ul>
+          <button class="card_btn">Подробнее</button>
+        </div>
       </div>
       <div class="carousel__slider slider">
         <div class="slider__circle"></div>
@@ -70,24 +92,86 @@
         <div class="slider__circle"></div>
         <div class="slider__circle"></div>
       </div>
-      <div class="carousel__btn">
+      <button class="carousel__btn">
         Смотреть все авто
-      </div>
+      </button>
     </div>
-      <div class="wrap">
-      <div class="commission-sale-advantages">
-        Комиссионная продажа оптимальное решение!
+    <div class="wrap">
+      <div class="benefits">
+        <img class="benefits__img" src=./styles/girl.png alt=""></img>
+        <div class="benefits__text">
+          <div class="benefits__title">
+            Комиссионная продажа
+          </div>
+          <div class="benefits__subtitle">
+            оптимальное решение!
+          </div>  
+          <ul class="benefits__description">
+            <li>«Комиссионная продажа» с обеспечением по графику. Безопасно, надежно, выгодно.</li>
+            <li>Эта услуга максимально открыта, гарантирует продажу в течение 5 недель по максимальной рыночной цене в условиях рынка.</li>
+            <li>Самое главное Вы получаете обеспечительный платеж до 95% от стоимости сразу в кассе.</li>
+          </ul>
+        </div>     
       </div>
-      <div class="benefit">
-        Мы с полной уверенностью заявляем что комиссионная продажа для Вас выгоднее, чем сдать машину скупщикам авто! Если у Вас есть хотя бы три дня на продажу автомобиля доверьте продажe нам и мы Вас удивим своими возможностями!
+      <div class="statement">
+        <p>Мы с полной уверенностью заявляем что комиссионная продажа для Вас выгоднее, чем сдать машину скупщикам авто!</p> 
+        <p>Если у Вас есть хотя бы три дня на продажу автомобиля доверьте продажe нам и мы Вас удивим своими возможностями!</p>
       </div>
       <div class="examples">
-        Есть автомобили, которые продаем в течение 1 часа
+        <div class="examples__autos">
+          <div class="examples__auto auto-first"></div>
+          <div class="examples__auto auto-second"></div>
+          <div class="examples__auto auto-third"></div>
+          <div class="examples__auto auto-fourth"></div>
+        </div>
+        <div class="scale">
+          <div class="scale__stained"></div>
+          <div class="scale__arrow-bg">
+            <svg class="scale__arrow" width="62" height="24" viewBox="0 0 62 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M61.0607 13.0607C61.6465 12.4749 61.6465 11.5251 61.0607 10.9393L51.5147 1.3934C50.9289 0.807611 49.9792 0.807611 49.3934 1.3934C48.8076 1.97919 48.8076 2.92893 49.3934 3.51472L57.8787 12L49.3934 20.4853C48.8076 21.0711 48.8076 22.0208 49.3934 22.6066C49.9792 23.1924 50.9289 23.1924 51.5147 22.6066L61.0607 13.0607ZM0 13.5H60V10.5H0V13.5Z" fill="white"/>
+            </svg>
+          </div>
+        </div>
+        <div class="examples__descriptions">
+          <div class="examples__description examples-description">
+            <div class="examples-description__text">
+              Есть автомобили, которые продаем в течение
+            </div>
+            <div class="examples-description__time">
+              1 часа
+            </div>
+          </div>
+          <div class="examples__description examples-description">
+            <div class="examples-description__text">
+              Почти новые автомобили продаются в течение
+            </div>
+            <div class="examples-description__time">
+              6 дней
+            </div>
+          </div>
+          <div class="examples__description examples-description">
+            <div class="examples-description__text">
+              Автомобили с пробегом  до 100 000 км продаем за
+            </div>
+            <div class="examples-description__time">
+              9 дней
+            </div>
+          </div>
+          <div class="examples__description examples-description">
+            <div class="examples-description__text">
+              В среднем мы продаем автомобили за
+            </div>
+            <div class="examples-description__time">
+              12 дней
+            </div>
+          </div>
+        </div>
       </div>
-      <button>
+      <button class="action-btn">
         Найти или продать автомобиль
       </button>
     </div>
+
     <script src="./scripts/scripts.js"></script>
   </body>
 </html>
