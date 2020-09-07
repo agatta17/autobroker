@@ -228,6 +228,7 @@ body {
 .wrap {
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #E9E9E9;
   padding-bottom: 83px;
+  position: relative;
 }
 
 .benefits {
@@ -389,4 +390,27 @@ body {
   display: block;
   outline: none;
   cursor: pointer;
+}
+
+.wrap::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 150px 0 0 50vw;
+  border-color: transparent transparent transparent #FFF;
+}
+
+.wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 150px 50vw 0  0;
+  border-color: transparent #FFF transparent transparent;
 }
