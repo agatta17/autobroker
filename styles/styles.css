@@ -57,6 +57,10 @@ body {
   text-align: center;
 }
 
+.center {
+  width: 88vw;
+}
+
 .our-advantages {
   display: flex;
   justify-content: space-between;
