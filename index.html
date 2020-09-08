@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
     <link rel="stylesheet" href="./fonts/fonts.css">
     <link rel="stylesheet" href="./styles/styles.css">
   </head>
@@ -13,7 +14,7 @@
         <div class="burger_line"></div>
       </div>
       <div class="logo">
-        <img src="./styles/logo.png" alt="логотип">
+        <img class="logo__img" src="./styles/logo.png" alt="логотип">
       </div>
       <div class="contacts">
         <div class="tel">8 (800) 550-88-20</div>
@@ -49,9 +50,49 @@
         </div>
       </div>
     </div>
-    <div class="img">
-      <img class="center" src="./styles/center.jpg" alt="Наш центр">
+    <div class="icons-advantages">
+      <div class="column">
+        <div class="icons-advantages__item icons-advantages-item">
+          <div class="icons-advantages-item__icon videocamera"></div>
+          <div class="icons-advantages-item_text">
+            Ведется видеоконтроль и видеофиксация
+          </div>
+        </div>
+        <div class="icons-advantages__item icons-advantages-item">
+          <div class="icons-advantages-item__icon security"></div>
+          <div class="icons-advantages-item_text">
+            Охрана ЧОП
+          </div>
+        </div>
+        <div class="icons-advantages__item icons-advantages-item">
+          <div class="icons-advantages-item__icon manager"></div>
+          <div class="icons-advantages-item_text">
+            Персональный менеджер и техник
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="icons-advantages__item icons-advantages-item">
+          <div class="icons-advantages-item__icon parking"></div>
+          <div class="icons-advantages-item_text">
+            Бесплатная стоянка
+          </div>
+        </div>
+        <div class="icons-advantages__item icons-advantages-item">
+          <div class="icons-advantages-item__icon distance"></div>
+          <div class="icons-advantages-item_text">
+            Автомобили находятся друг от друга на безопасном расстоянии
+          </div>
+        </div>
+        <div class="icons-advantages__item icons-advantages-item">
+          <div class="icons-advantages-item__icon responsibility"></div>
+          <div class="icons-advantages-item_text">
+            Мы несем полную материальную ответственность за автомобиль
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="center"></div>
     <div class="title">
       Продажа авто с пробегом в Самаре
     </div>
@@ -98,7 +139,9 @@
     </div>
     <div class="wrap">
       <div class="benefits">
-        <img class="benefits__img" src=./styles/girl.png alt=""></img>
+        <div class="benefits__img">
+          <img class="girl" src="./styles/girl.png" alt="">
+        </div>
         <div class="benefits__text">
           <div class="benefits__title">
             Комиссионная продажа
@@ -170,8 +213,6 @@
       <button class="action-btn">
         Найти или продать автомобиль
       </button>
-      <div class="triangular-bg-left"></div>
-      <div class="triangular-bg-right"></div>
     </div>
     <script src="./scripts/scripts.js"></script>
   </body>
