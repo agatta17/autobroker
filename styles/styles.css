@@ -14,12 +14,43 @@ body {
   width: 95vw;
   max-width: 1145px;
   margin: 36px auto 45px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: top;
+  justify-items: center;
+  grid-template-areas: 
+    "burger logo contacts";
+}
+
+@media (max-width: 660px){
+  .header {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+      "burger logo"
+      "burger contacts";
+  }
+}
+
+@media (max-width: 400px){
+  .header {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+      "burger logo"
+      "contacts contacts";
+  }
 }
 
 .burger {
   width: 210px;
+  grid-area: burger;
+}
+
+@media (max-width: 660px){
+  .burger {
+    width: auto;
+  }
 }
 
 .burger_line {
@@ -31,6 +62,13 @@ body {
 
 .logo {
   width: 228px;
+  grid-area: logo;
+}
+
+@media (max-width: 660px){
+  .logo {
+    width: auto;
+  }
 }
 
 @media (max-width: 960px){
@@ -50,11 +88,19 @@ body {
 
 .contacts {
   width: 270px;
+  grid-area: contacts;
 }
 
 @media (max-width: 960px){
   .contacts {
     width: 200px;
+  }
+}
+
+@media (max-width: 660px){
+  .contacts {
+    width: 70%;
+    text-align: center;
   }
 }
 
@@ -71,6 +117,12 @@ body {
 @media (max-width: 690px){
   .title {
     font-size: 2.25em;
+  }
+}
+
+@media (max-width: 510px){
+  .title {
+    font-size: 1.6em;
   }
 }
 
@@ -105,6 +157,12 @@ body {
   .our-advantages {
     flex-direction: column;
     width: 60vw;
+  }
+}
+
+@media (max-width: 400px){
+  .our-advantages {
+    margin-bottom: 70px;
   }
 }
 
@@ -241,11 +299,29 @@ body {
   }
 }
 
+@media (max-width: 510px){
+  .carousel {
+    height: 736px;
+  }
+}
+
+@media (max-width: 400px){
+  .carousel {
+    height: 800px;
+  }
+}
+
 .carousel__title {
   font-weight: bold;
   font-size: 1.8em;
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (max-width: 510px){
+  .carousel__title {
+    font-size: 1.6em;
+  }
 }
 
 @media (max-width: 590px){
@@ -271,6 +347,13 @@ body {
   .carousel__card {
     width: 510px;
     height: 290px;
+  }
+}
+
+@media (max-width: 510px){
+  .carousel__card {
+    width: 290px;
+    height: 502px;
   }
 }
 
@@ -343,6 +426,13 @@ body {
   }
 }
 
+@media (max-width: 510px){
+  .carousel__btn {
+    margin: 15px auto;
+    width: 290px;
+  }
+}
+
 .card {
   display: flex;
   justify-content: space-evenly;
@@ -350,6 +440,13 @@ body {
   border-radius: 20px;
   box-sizing: border-box;
   padding-top: 40px;
+}
+
+@media (max-width: 510px){
+  .card {
+    flex-direction: column;
+    padding: 20px;
+  }
 }
 
 .card__photo {
@@ -370,6 +467,14 @@ body {
   .card__photo {
     width: 214px;
     height: 180px;
+  }
+}
+
+@media (max-width: 510px){
+  .card__photo {
+    width: 249px;
+    height: 209px;
+    margin-bottom: 15px;
   }
 }
 
@@ -540,6 +645,12 @@ body {
   }
 }
 
+@media (max-width: 510px){
+  .benefits__title {
+    font-size: 1.6em;
+  }
+}
+
 .benefits__subtitle {
   font-size: 1.8em;
   text-transform: uppercase;
@@ -555,6 +666,12 @@ body {
 @media (max-width: 690px){
   .benefits__subtitle {
     font-size: 1.63em;
+  }
+}
+
+@media (max-width: 510px){
+  .benefits__subtitle {
+    font-size: 1.5em;
   }
 }
 
@@ -728,6 +845,12 @@ body {
   }
 }
 
+@media (max-width: 510px){
+  .action-btn {
+    width: 290px;
+  }
+}
+
 .wrap::before {
   content: '';
   position: absolute;
@@ -752,3 +875,13 @@ body {
   border-color: transparent #FFF transparent transparent;
   z-index: 0;
 }
+
+@media (max-width: 960px){
+    .wrap::before {
+      border-width: 50px 0 0 50vw;
+    }
+
+    .wrap::after {
+      border-width: 50px 50vw 0  0;
+    }
+  }
