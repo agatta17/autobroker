@@ -377,6 +377,7 @@ body {
   background: #FFDD2E;
   padding-top: 70px;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 @media (max-width: 810px){
@@ -404,6 +405,37 @@ body {
   }
 }
 
+.carousel__offset {
+  position: relative;
+  left: calc(50vw - 400px);
+}
+
+@media (max-width: 810px){
+  .carousel__offset {
+    left: calc(50vw - 285px);
+  }
+}
+
+@media (max-width: 590px){
+  .carousel__offset {
+    left: calc(50vw - 255px);
+  }
+}
+
+@media (max-width: 510px){
+  .carousel__offset {
+    left: calc(50vw - 145px);
+  }
+}
+
+.carousel__bar {
+  left: 0;
+  position: relative;
+  transition: all ease 1s;
+  display: flex;
+  width: 2538px;
+}
+
 .carousel__title {
   font-weight: bold;
   font-size: 1.8em;
@@ -426,7 +458,7 @@ body {
 .carousel__card {
   width: 800px;
   height: 395px;
-  margin: 23px auto;
+  margin: 23px 20px 23px 0;
 }
 
 @media (max-width: 810px){
@@ -466,7 +498,7 @@ body {
   }
 }
 
-.slider__circle {
+.slider__circle-left, .slider__circle-right {
   width: 21px;
   height: 21px;
   background: #FFF;
@@ -474,7 +506,7 @@ body {
 }
 
 @media (max-width: 930px){
-  .slider__circle {
+  .slider__circle-left, .slider__circle-right {
     width: 16px;
     height: 16px;
   }
@@ -691,15 +723,15 @@ body {
 
 @media (min-width: 1400px){
   .benefits__text {
-  padding-top: 9vw;
-  position: relative;
+    padding-top: 9vw;
+    position: relative;
   }
 }
 
 @media (min-width: 960px){
   .benefits__text {
-  padding-top: 9vw;
-  position: relative;
+    padding-top: 9vw;
+    position: relative;
   }
 }
 
@@ -718,17 +750,17 @@ body {
 
 @media (min-width: 1400px){
   .benefits__title {
-  position: absolute;
-  top: 5vw;
-  left: -200px;
+    position: absolute;
+    top: 5vw;
+    left: -200px;
   }
 }
 
 @media (min-width: 960px){
   .benefits__title {
-  position: absolute;
-  top: 3vw;
-  left: -100px;
+    position: absolute;
+    top: 3vw;
+    left: -100px;
   }
 }
 
@@ -752,7 +784,7 @@ body {
 
 @media (min-width: 1400px){
   .benefits__subtitle {
-  margin-bottom: 2vw;
+    margin-bottom: 2vw;
   }
 }
 
