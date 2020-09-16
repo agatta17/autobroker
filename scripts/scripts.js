@@ -8,34 +8,24 @@ burger.onclick = function() {
   menu.classList.remove('visible');
 };
 
-for (let node of document.getElementsByClassName('slider__circle-left')) {
-  node.addEventListener('click', sliderLeft);
+for (let node of document.getElementsByClassName('slider__circle')) {
   node.addEventListener('click', circleActive);
 }
 
-for (let node of document.getElementsByClassName('slider__circle-right')) {
-  node.addEventListener('click', sliderRight);
-  node.addEventListener('click', circleActive);
-}
-
-let left = 0;
 const bar = document.getElementById('bar');
 const card = document.getElementById('card');
+const circleFirst = document.getElementById('circleFirst');
+const circleSecond = document.getElementById('circleSecond');
+const circleThird = document.getElementById('circleThird');
 
-function sliderLeft() {
-	left = left-card.offsetWidth-20;
-	if (left<-card.offsetWidth*2-40) {
-		left = 0;
-	}
-	bar.style.transform = 'translateX(' + left + 'px)';
+circleFirst.onclick = function() {
+	bar.style.transform = 'translateX(' + 0 + 'px)';
 }
 
-function sliderRight() {
-	left = left+card.offsetWidth+20;
-	if (left>card.offsetWidth) {
-		left = -card.offsetWidth*2-40;
-	}
-	bar.style.transform = 'translateX(' + left + 'px)';
+circleSecond.onclick = openCircleSecond;
+
+circleThird.onclick = function() {
+	bar.style.transform = 'translateX(' + (-2*card.offsetWidth-20) + 'px)';
 }
 
 function circleActive() {
@@ -45,4 +35,8 @@ function circleActive() {
 	this.classList.add('slider__circle_active');
 }
 
-sliderLeft();
+function openCircleSecond() {
+	bar.style.transform = 'translateX(' + (-card.offsetWidth-20) + 'px)';
+}
+
+openCircleSecond();

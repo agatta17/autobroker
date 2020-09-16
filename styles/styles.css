@@ -488,25 +488,20 @@ body {
 
 .slider {
   display: flex;
-  width: 232px;
+  width: 100px;
   justify-content: space-between;
 }
 
-@media (max-width: 930px){
-  .slider {
-    width: 200px;
-  }
-}
-
-.slider__circle-left, .slider__circle-right {
+.slider__circle {
   width: 21px;
   height: 21px;
   background: #FFF;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 @media (max-width: 930px){
-  .slider__circle-left, .slider__circle-right {
+  .slider__circle {
     width: 16px;
     height: 16px;
   }
